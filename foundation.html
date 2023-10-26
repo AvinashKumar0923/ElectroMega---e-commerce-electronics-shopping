@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation</title>
+    <link rel="stylesheet" href="foundation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+<body>
+    <header class="header">
+        <div class="header-1">
+            <a href="#" class="logo">
+                <i class="fa fa-bolt" aria-hidden="true"></i><span>E</span>lectro<span>M</span>ega
+            </a>
+
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="search here..." id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <div id="seach-btn" class="fas fa-search"></div>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="checkout.html" class="fas fa-shopping-cart"></a>
+                <a href="login.html" class="fas fa-user"></a>
+            </div>
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="#top-deals1">Featured</a>
+                <a href="categories.html">Categories</a>
+                <a href="about.html">About Us</a>
+                <a href="contactus.html">Contact Us</a>
+                <div class="dropdown">
+                    <button class="btn">All Pages</button>
+                    <div class="dropdown-content">
+                        <div class="drop" style="display: flex;">
+                        <div class="drop-div">
+                        <a href="index.html">Home</a>
+                        <a href="categories.html">Categories</a>
+                        <a href="categories-1.html">Smartphones</a>
+                        <a href="comparison.html">Compare</a>
+                        <a href="preview-1.html">Product Review</a>
+                        <a href="product-1.html">Apple iPhones</a>
+                        <a href="locator.html">Store Locator</a>
+                        <a href="giftcard.html">Gift Cards</a>
+                        <a href="foundation.html">ElectroMega Foundation</a>
+                        <a href="checkout.html">Checkout</a>
+                        </div>
+                        <div class="drop-div">
+                        <a href="faq.html">FAQs</a>
+                        <a href="affiliate.html">Affiliate Program</a>
+                        <a href="affiliatetools.html">Affiliate Tools</a>
+                        <a href="customer.html">Customer Services</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="trackorder.html">Track order</a>
+                        <a href="about.html">About Us</a>
+                        <a href="contactus.html">Contact Us</a>
+                        <a href="login.html">Login</a>
+                        <a href="register.html">SignUp</a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="heading">
+        ElectroMega <span>Foundation</span>
+    </div>
+
+    <!-- Carousel -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <a href="" target="_blank"><img src="Assets/Foundation/carousel1.png" style="width:100%;" height="600px"></a>
+          <!-- <div class="text">Caption Text</div> -->
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <a href="" target="_blank"><img src="Assets/Foundation/carousel2.png" style="width:100%" height="600px"></a>
+          <!-- <div class="text">Caption Two</div> -->
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <a href="" target="_blank"><img src="Assets/Foundation/carousel3.png" style="width:100%" height="600px"></a>
+          <!-- <div class="text">Caption Three</div> -->
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center; margin-bottom: 1rem;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <!-- Carousel End -->
+
+    <div class="flex-box">
+        <div class="left">
+            <img src="https://flipkartfoundation.org/assets/images/resources/Overview.jpg" alt="">
+        </div>
+
+        <div class="right">
+            <div class="container">
+                <h2>Donate to ElectroMega Foundation</h2>
+                <div class="sub-heading" style="text-align: center;">Bring Happiness to Others</div>
+                <div class="sub-heading" style="background-color: #d6adf9;">Send an Amount to the Foundation</div>
+                <div class="grid-container" style="grid-template-columns: repeat(2, 1fr);">
+                    <div class="attribute">Name</div>
+                    <div class="attribute">Mobile Number</div>
+                    
+                    <div class="phone"><input type="text" id="name" placeholder="Enter your name"></div>
+                    <div class="phone"><input type="number" id="mobno" placeholder="Enter your mobile number"></div>
+        
+                </div>
+
+                <div class="grid-container" style="grid-template-columns: repeat(1, 1fr);">
+                    <div class="attribute">Email</div>
+                    <div class="phone"><input type="email" id="email" placeholder="Enter your email"></div>
+        
+                </div>
+
+                <div class="grid-container" style="grid-template-columns: repeat(2, 1fr);">
+                    <div class="attribute">Enter Amount</div>
+                    <div class="attribute">UPI id</div>
+                    
+                    <div class="phone"><input type="number" id="cvalue" placeholder="₹50-₹50,000"></div>
+                    <div class="phone"><input type="text" id="qty" placeholder="1234567890@upi"></div>
+        
+                </div>
+
+                <div class="grid-container" style="grid-template-columns: repeat(1, 1fr);">
+                    <div class="attribute">Message</div>
+                    <div class="phone"><textarea name="message-box" id="message-box" cols="90" rows="10" placeholder="Enter your message"></textarea></div>
+        
+                </div>
+                    
+        
+                </div>
+                <div class="btn-box">
+                    <button class="submit" onclick="showMessage()">Send</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="products" id="products">
+            <!-- card start -->
+            <div class="card">
+                <div class="img"><img src="Assets/Foundation/vision.png" alt=""></div>
+                <div class="title">Vision</div>
+                <div class="box">
+                    At ElectroMega, there has always been great intent and enthusiasm to support initiatives on the ground. Be it supporting grassroots-level interventions, celebrating festivals with the underprivileged to spread cheer, or commemorating days of relevance as a mark of commitment to the causes
+                </div>
+            </div>
+            <!-- card end -->
+            <!-- card start -->
+            <div class="card">
+                <div class="img"><img src="https://flipkartfoundation.org/assets/images/gallery/Mission-Vision-Image.png" alt=""></div>
+                <div class="title">Overview</div>
+                <div class="box">
+                    At ElectroMega, we align our Corporate Social Responsibility activities to the overarching theme of "Building India Together".
+With this goal, 'ElectroMega Cares' was launched to serve, support, and empower unskilled and underprivileged sections of society.
+To institutionalize these efforts of Flipkart in creating sustainable social impact and to streamline our CSR program delivery, we went on to establish the "Flipkart Foundation" in 2022.
+                </div>
+            </div>
+            <!-- card end -->
+            <!-- card start -->
+            <div class="card">
+                <div class="img"><img src="Assets/Foundation/mission.png" alt=""></div>
+                <div class="title">Mission</div>
+                <div class="box">
+                    The Foundation focuses on continuing the work done through ElectroMega Cares, in various sectors to ensure maximum reach and sustainable impact.
+                </div>
+            </div>
+            <!-- card end -->
+        </div>
+
+        <div class="demo" id="demo" style="padding:30px; font-family: 'Courier New', Courier, monospace; font-weight: 500;"></div>
+    </div>
+
+
+    <!-- Footer-section -->
+    <section class="contact">
+        <div class="contact-info">
+            <div class="first-info">
+                <img src="logo.png" alt="">
+
+                <p>3245 Grant Street Longview, <br> TX united kingdom 765378</p>
+                <p>01601348732</p>
+                <p>avinash0923kmr@gmail.com</p>
+
+                <div class="social-icon">
+                    <a href="#" class="fb"><i class='fa fa-facebook-square'></i></a>
+                    <a href="#" class="twt"><i class='fa fa-twitter-square'></i></a>
+                    <a href="#" class="inst"><i class='fa fa-instagram'></i></a>
+                    <a href="#" class="yt"><i class='fa fa-youtube-play'></i></a>
+                    <a href="#" class="lik"><i class='fa fa-linkedin-square'></i></a>
+                </div>
+            </div>
+
+            <div class="second-info">
+                <h4>Support</h4>
+                <p>Contact us</p>
+                <p>About page</p>
+                <p>Budget Guide</p>
+                <p>Shopping & Returns</p>
+                <p>Privacy</p>
+            </div>
+
+            <div class="third-info">
+                <h4>Shop</h4>
+                <p>Small Appliances</p>
+                <p>Appliances</p>
+                <p>Brand</p>
+                <p>Discount</p>
+            </div>
+
+            <div class="fourth-info">
+                <h4>Company</h4>
+                <p>About</p>
+                <p>Blog</p>
+                <p>Affiliate</p>
+                <p>Login</p>
+            </div>
+
+            <div class="five">
+                <h4>Subscribe</h4>
+                <p>Receive Updates, Hot Deals, Discounts Sent Straight In Your Inbox Daily</p>
+                <p>Always get notified for mega offers during festive season.</p>
+                <p>Join our social media handles to stay updated with the latest trends in electronics domain.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="end-text">
+        <p>ElectroMega Copyright © @2023. All Rights Reserved.</p>
+    </div>
+    <script src="index.js"></script>
+    <!-- <script>
+
+        function showMessage(){
+            let name=document.getElementById("name").value;
+            let email=document.getElementById("email").value;
+            let mobno=document.getElementById("mobno").value;
+            let cvalue=document.getElementById("cvalue").value;
+            let qty=document.getElementById("qty").value;
+            let msg=document.getElementById("message-box").value;
+            if((cvalue>=50 && cvalue<=50000) && mobno.toString().length===10 && email.indexOf('@') > -1 && upi.indexOf('@') > -1){
+            if((name==="" || email==="" || mobno==="" || cvalue==="" || qty==="" || msg==="")===false){
+                document.getElementById("demo").innerHTML=`<hr><h1>Thanks for Purchasing the Gift Card!</h1><br>The following gift card of worth ${cvalue} has been sent to:<br>Name: ${name}<br>Email: ${email}<br>Contact Number: ${mobno}<br>Message: ${msg}`;
+            }
+            else{
+                document.getElementById("demo").innerText="Please fill in the details again!"
+            }
+        }
+        else{
+            document.getElementById("demo").innerText="Please fill in the details again!"
+        }
+        }
+    </script> -->
+</body>
+</html>

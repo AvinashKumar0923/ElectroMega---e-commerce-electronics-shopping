@@ -1,0 +1,357 @@
+/* Reset some default styles */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Nanum+Gothic&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 400;
+}
+body{
+    background: radial-gradient(circle at center, #e7deff , #c27cff);
+}
+:root{
+    --border: .1rem solid rgba(0,0,0,.1);
+    --border-hover: .1rem solid rgba(0,0,0,.1);
+ }
+ .dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown .btn {
+    background-color: #553399;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    font-size: 1.15rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #553399;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content:hover{
+    background-color: #553399;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.dropdown-content a:hover {
+    color: #fff;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.header .header-1{
+    background: #2A2F4F;
+    padding: 0.67rem 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .header-1 .logo{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #E5BEEC;
+    text-decoration: none;
+    font-family: 'Electrolize', sans-serif;
+}
+.header .header-1 .logo span{
+    font-family:'ADLaM Display', cursive;
+    font-size: 40px;
+    color: #917FB3;
+}
+.header .header-1 .logo i{
+    color: #7444d2;
+    padding-right: 11px;
+    font-size: 40px;
+}
+
+.header .header-1 .search-form{
+    width: 45rem;
+    height: 2.7rem;
+    border: var(--border);
+    overflow: hidden;
+    background: #dec1f7;
+    display: flex;
+    align-items: center;
+    border-radius: .5rem;
+    border: none;
+
+}
+
+.header .header-1 .search-form input{
+    font-size: 1.5rem;
+    padding: 0 1.2rem;
+    height: 100%;
+    width: 100%;
+    text-transform: none ;
+    color: #454245;
+}
+.header .header-1 .search-form label{
+    font-size: 1.3rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    color: #434143;
+}
+.header .header-1 .search-form label:hover{
+    color: #553399;
+}
+
+.header .header-1 .icons div,
+.header .header-1 .icons a{
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    color: #dec1f7;
+    cursor: pointer;
+    text-decoration: none;
+}
+.header .header-1 .icons div:hover,
+.header .header-1 .icons a:hover{
+    color: #976ee8;
+    transform: scale(1.2);
+}
+
+.header .header-2{
+    background: #553399;
+    font-family: 'Jost', sans-serif;
+}
+.header .header-2 .navbar{
+    text-align: center;
+}
+.header .header-2 .navbar a{
+    color: #fff;
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.15rem;
+    text-decoration: none;
+}
+.header .header-2 .navbar :hover{
+    background-color: #472e79;
+}
+
+/* Contact Page Heading */
+.heading{
+    text-align:center;
+    display: block;
+    padding: 3rem;
+    font-size: 3rem;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    color: #685b80;
+}
+.heading span{
+    color: #a789ac;
+    font-size: 3rem;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+}
+/* ICONS Css */
+
+.top-deals1{
+    font-family: 'ADLaM Display', cursive;
+    margin-bottom: 5px;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    font-weight: 1000;
+    font-size: 25px;
+    color: #553399;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.contact-page .icons-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3rem;
+}
+.contact-page .icons{
+    height: 17rem;
+    width: 20rem;
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(180deg, #e5beec 0%, #e5beec 50%);
+    border: solid 3px #2A2F4F;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px #5a525a;
+}
+
+
+.contact-page .icons h3{
+    font-family: 'Jost', sans-serif;
+    padding: 0.2rem;
+    font-weight: bolder;
+    color: #2A2F4F;
+}
+
+.contact-page .icons p{
+    font-family: 'Jost', sans-serif;
+    color: #766891;
+    font-weight: 200;
+    padding: .1rem;
+}
+.contact-page .icons img{
+    height: 10rem;
+    width: 15rem;
+    /* line-height: 6rem; */
+    font-size: 3rem;
+    border-radius: 4px;
+    margin-bottom: .5rem;
+    color: #fff;
+    background-color: #917FB3;
+    border: solid 3px #2A2F4F;
+    object-fit: cover;
+}
+
+.contact-page .icons img:hover{
+    transform: scale(1.07);
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.contact-page .icons h3:hover{
+    transform: scale(1.1);
+    transition: all .3s;
+    cursor: pointer;
+    color: rgb(120, 1, 1);
+}
+
+.container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 4rem;
+  }
+  /* .content .image-box{
+    max-width: 55%;
+  } */
+  .content .image-box img{
+    height: 25rem;
+    width: 35.6rem;
+  }
+
+  .content .about-content{
+    padding: 35px;
+    line-height: 3.7vh;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    text-align: justify;
+    color: #2A2F4F;
+  }
+
+  .banner img{
+    width: 100%;
+  }
+  .sentence{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: larger;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bolder;
+    font-family: 'Jost', sans-serif;
+    background: radial-gradient(circle at center, #c698ef , #c27cff);
+    padding: 35px;
+    border-radius: 12px;
+    color: #3b236b;
+  }
+
+/* footer */
+/* Footer CSS */
+.contact{
+    background-color: #2A2F4F;
+    padding: 4rem 9rem;
+    margin-top: 10px;
+}
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    gap: 3rem;
+}
+.first-info img{
+    width: 140px;
+    height: auto;
+}
+.contact-info h4{
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    font-family: 'Jost', sans-serif;
+}
+.contact-info p{
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .42s;
+    font-family: 'Jost', sans-serif;
+}
+.contact-info .second-info p:hover,
+.contact-info .third-info p:hover,
+.contact-info .fourth-info p:hover
+{
+    color: #EE1C47;
+    transform: translate(8px,0px);
+}
+.social-icon i{
+    color: #fff;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all .42s;
+}
+.social-icon .yt i:hover{
+    transform: scale(1.3);
+    color: red;
+}
+.social-icon .twt i:hover{
+    transform: scale(1.3);
+    color: rgb(9, 169, 233);
+}
+.social-icon .lik i:hover{
+    transform: scale(1.3);
+    color: rgb(16, 85, 141);
+}
+.social-icon .fb i:hover{
+    transform: scale(1.3);
+    color: rgb(54, 54, 226);
+}
+.social-icon .inst i:hover{
+    transform: scale(1.3);
+    color: rgb(197, 18, 164);
+}
+.end-text{
+    background-color: #edfff1;
+    text-align: center;
+    padding: 20px;
+}
+.end-text p{
+    color: #111;
+    text-transform: capitalize;
+}

@@ -1,0 +1,514 @@
+/* Reset some default styles */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Nanum+Gothic&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 400;
+}
+body{
+    background: radial-gradient(circle at center, #e7deff , #c27cff);
+}
+:root{
+    --border: .1rem solid rgba(0,0,0,.1);
+    --border-hover: .1rem solid rgba(0,0,0,.1);
+ }
+ .dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown .btn {
+    background-color: #553399;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    font-size: 1.15rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #553399;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content:hover{
+    background-color: #553399;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.dropdown-content a:hover {
+    color: #fff;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+ 
+.header .header-1{
+    background: #2A2F4F;
+    padding: 0.67rem 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .header-1 .logo{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #E5BEEC;
+    text-decoration: none;
+    font-family: 'Electrolize', sans-serif;
+}
+.header .header-1 .logo span{
+    font-family:'ADLaM Display', cursive;
+    font-size: 40px;
+    color: #917FB3;
+}
+.header .header-1 .logo i{
+    color: #7444d2;
+    padding-right: 11px;
+    font-size: 40px;
+}
+
+.header .header-1 .search-form{
+    width: 45rem;
+    height: 2.7rem;
+    border: var(--border);
+    overflow: hidden;
+    background: #dec1f7;
+    display: flex;
+    align-items: center;
+    border-radius: .5rem;
+    border: none;
+
+}
+
+.header .header-1 .search-form input{
+    font-size: 1.5rem;
+    padding: 0 1.2rem;
+    height: 100%;
+    width: 100%;
+    text-transform: none ;
+    color: #454245;
+}
+.header .header-1 .search-form label{
+    font-size: 1.3rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    color: #434143;
+}
+.header .header-1 .search-form label:hover{
+    color: #553399;
+}
+
+.header .header-1 .icons div,
+.header .header-1 .icons a{
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    color: #dec1f7;
+    cursor: pointer;
+    text-decoration: none;
+}
+.header .header-1 .icons div:hover,
+.header .header-1 .icons a:hover{
+    color: #976ee8;
+    transform: scale(1.2);
+}
+
+.header .header-2{
+    background: #553399;
+    font-family: 'Jost', sans-serif;
+}
+.header .header-2 .navbar{
+    text-align: center;
+}
+.header .header-2 .navbar a{
+    color: #fff;
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.15rem;
+    text-decoration: none;
+}
+.header .header-2 .navbar :hover{
+    background-color: #472e79;
+}
+
+/* Contact Page Heading */
+.heading{
+    text-align:center;
+    display: block;
+    padding: 3rem;
+    font-size: 3rem;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    color: #685b80;
+}
+.heading span{
+    color: #816785;
+    font-size: 3rem;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+}
+
+/* cards */
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 50px;
+}
+
+.products .card{
+    width: 440px;
+    background: linear-gradient(0deg, #FDE2F3 0%, #917FB3 100%);
+    box-shadow:0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 9px;
+    padding: 5px;
+    margin-bottom: 20px;
+    height: 700px;
+}
+
+
+.products .card img{
+    height: 450px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    width: 100%;
+}
+
+.products .card .desc{
+    padding: 5px;
+    opacity: 0.8;
+    font-family: 'Jost', sans-serif;
+}
+
+.products .card .title{
+    font-weight: 900;
+    font-size: 20px;
+    color: #434143;
+    padding: 0 20px;
+    font-family: 'Jost', sans-serif;
+}
+
+.products .card .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Jost', sans-serif;
+}
+
+.products .card .box .price{
+    color: rgb(211, 27, 27);
+    font-size: 20px;
+    font-weight: 500;  
+    font-family: 'Jost', sans-serif;
+}
+
+.products .card .box .price .mrp{
+    color: #767576;
+    font-size: 15px;
+    padding-top: 3px;
+    font-weight: 520;
+}
+
+.products .card .box .price .mrp del{
+    text-decoration: line-through;
+}
+
+.products .card .box .btn{
+    font-size: 13px;
+    color: rgb(211, 27, 27);
+    padding: 10px 18px;
+    font-weight: 900;
+    border: 1px solid #f63e4e;
+    border-radius: 20px;
+
+}
+
+.products .card .box .btn:hover{
+    cursor: pointer;
+    background-color: #f63e4e;
+    color: #f0f0f0;
+}
+
+.flex-box{
+    display: flex;
+    padding: 0 6rem;
+    justify-content: space-between;
+}
+
+.left img{
+    width: 500px;
+    height: 500px;
+    padding-top: 27px;
+    display: block;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Jost', sans-serif;
+}
+
+.container h2{
+    padding: 15px;
+    background-color: #553399;
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+}
+.container .sub-heading{
+    margin: 20px 0px;
+    padding: 10px 10px;
+    background-color: #f2f2f2;
+    font-weight: bold;
+    font-size: 17.1px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.attribute {
+    background-color: #d6adf9;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.attribute img{
+    height: 85%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.phone {
+    border: 1px solid #ddd;
+}
+
+.phone input{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    font-size: 15px;
+}
+.phone textarea{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    font-size: 15px;
+}
+.btn-box{
+    display: flex;
+    margin-top: 40px;
+    margin: auto;
+    justify-content: center;
+}
+.btn-box button{
+    font-size: 18px;
+    padding: 8px 25px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #7444d2;
+}
+
+.btn-box button:hover{
+    background-color: #553399;
+}
+
+/* Carousel CSS */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+
+
+/* footer */
+/* Footer CSS */
+.contact{
+    background-color: #2A2F4F;
+    padding: 4rem 9rem;
+    margin-top: 10px;
+}
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    gap: 3rem;
+}
+.first-info img{
+    width: 140px;
+    height: auto;
+}
+.contact-info h4{
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    font-family: 'Jost', sans-serif;
+}
+.contact-info p{
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .42s;
+    font-family: 'Jost', sans-serif;
+}
+.contact-info .second-info p:hover,
+.contact-info .third-info p:hover,
+.contact-info .fourth-info p:hover
+{
+    color: #EE1C47;
+    transform: translate(8px,0px);
+}
+.social-icon i{
+    color: #fff;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all .42s;
+}
+.social-icon .yt i:hover{
+    transform: scale(1.3);
+    color: red;
+}
+.social-icon .twt i:hover{
+    transform: scale(1.3);
+    color: rgb(9, 169, 233);
+}
+.social-icon .lik i:hover{
+    transform: scale(1.3);
+    color: rgb(16, 85, 141);
+}
+.social-icon .fb i:hover{
+    transform: scale(1.3);
+    color: rgb(54, 54, 226);
+}
+.social-icon .inst i:hover{
+    transform: scale(1.3);
+    color: rgb(197, 18, 164);
+}
+.end-text{
+    background-color: #edfff1;
+    text-align: center;
+    padding: 20px;
+}
+.end-text p{
+    color: #111;
+    text-transform: capitalize;
+}
